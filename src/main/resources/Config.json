@@ -1,0 +1,18 @@
+{
+	"path": "C:\\Users\\owner\\Desktop\\testDataRoot",
+	"outputPath": "C:\\Users\\owner\\Desktop\\testDataRoot\\output.txt",
+	"practiceList": [
+		{
+			"practiceName": "NewEmployeeTest1.jar",
+			"input": "123456789 987654321"
+		},
+		{
+			"practiceName": "NewEmployeeTest2.jar",
+			"input": "100 8"
+		},
+		{
+			"practiceName": "NewEmployeeTest3.jar",
+			"input": "90 20"
+		}
+	]
+}
