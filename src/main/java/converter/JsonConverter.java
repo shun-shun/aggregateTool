@@ -11,30 +11,30 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JsonConverter {
 
-	   private static ObjectMapper mapper = new ObjectMapper();
+	private static ObjectMapper mapper = new ObjectMapper();
 
-	   private JsonConverter() {
-	      // do nothing.
-	   }
+	private JsonConverter() {
+		// do nothing.
+	}
 
-	   public static String toString(final Object object) throws JsonGenerationException, JsonMappingException,
-	         IOException {
+	public static String toString(final Object object) throws JsonGenerationException, JsonMappingException,
+			IOException {
 
-	      String json = mapper.writeValueAsString(object);
+		String json = mapper.writeValueAsString(object);
 
-	      return json;
-	   }
+		return json;
+	}
 
-	   public static <T> T toObject(final File jsonFile, final Class<T> clazz) throws JsonParseException,
-	         JsonMappingException, IOException {
+	public static <T> T toObject(final File jsonFile, final Class<T> clazz) throws JsonParseException,
+			JsonMappingException, IOException {
 
-	      T object = null;
+		T object = null;
 
-	      if (jsonFile == null) {
-	         throw new InvalidParameterException("jsonFile is null.");
-	      }
-	      object = mapper.readValue(jsonFile, clazz);
+		if (jsonFile == null) {
+			throw new InvalidParameterException("jsonFile is null.");
+		}
+		object = mapper.readValue(jsonFile, clazz);
 
-	      return object;
-	   }
+		return object;
+	}
 }
