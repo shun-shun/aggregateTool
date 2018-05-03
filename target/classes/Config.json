@@ -1,18 +1,18 @@
 {
-	"path": "C:\\Users\\owner\\Desktop\\testDataRoot",
-	"outputPath": "C:\\Users\\owner\\Desktop\\testDataRoot\\output.txt",
+	"path": "C:\\Users\\owner\\Desktop\\testRootFile",
+	"outputPath": "C:\\Users\\owner\\Desktop\\testRootFile\\output.csv",
 	"practiceList": [
 		{
 			"practiceName": "NewEmployeeTest1.jar",
-			"input": "123456789 987654321"
+			"input": "1000"
 		},
 		{
 			"practiceName": "NewEmployeeTest2.jar",
-			"input": "100 8"
+			"input": "CapsLock"
 		},
 		{
 			"practiceName": "NewEmployeeTest3.jar",
-			"input": "90 20"
+			"input": "CapsLock"
 		}
 	]
 }
