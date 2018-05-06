@@ -125,7 +125,8 @@ public class Main {
 
     private static List<File> getFileInstanceList(String filePathStr) throws IOException {
         try (Stream<Path> path = Files.list(Paths.get(filePathStr))) {
-            return path.map(f -> new File(f.toUri())).collect(Collectors.toList());
+            return path.map(f -> f.toFile()).collect(Collectors.toList());
         }
     }
+
 }

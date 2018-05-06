@@ -16,11 +16,9 @@ public class FileOut {
 
     private static FileOut fileOut = new FileOut();
 
-    private FileOut() {
+    private FileOut() {}
 
-    }
-
-    public static FileOut getFileOut() {
+    public static FileOut getInstance() {
         return fileOut;
     }
 
